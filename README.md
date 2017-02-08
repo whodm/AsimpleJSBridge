@@ -10,17 +10,18 @@ use it on your layout
 
 find your webview as usual
 
-webView = (BridgeWebView)findViewById(R.id.webview);
+        webView = (BridgeWebView)findViewById(R.id.webview);
 
 load as usual
 
 webView.loadUrl("your site");
 
 register your Bridge
+
         webView.registerHandler("you name it", new BridgeCallback() {
             @Override
             public void callBack(String data) {
-                
+                tv.setText(data);
             }
         });
         
