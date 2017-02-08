@@ -17,7 +17,6 @@ load as usual
 webView.loadUrl("your site");
 
 register your Bridge
-
         webView.registerHandler("you name it", new BridgeCallback() {
             @Override
             public void callBack(String data) {
