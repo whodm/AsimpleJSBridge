@@ -17,7 +17,8 @@ load as usual
 webView.loadUrl("your site");
 
 register your Bridge
-        webView.registerHandler("you name it", new BridgeCallback() {
+
+        webView.registerHandler("you name it", new BridgeCallback() {
             @Override
             public void callBack(String data) {
                 
@@ -26,16 +27,17 @@ register your Bridge
         
 use this in your H5 page to send msg
 
-window.webBridge.bridgeSend('you name it','your data');
+                window.webBridge.bridgeSend("you name it","your data");
         
         
 register you handler in you h5;
-function bind(){
-    window.webBridge.registerHandler('you name it',function(data,handlerName){
+
+        window.webBridge.registerHandler('you name it',function(data,handlerName){
 
     });
 
 send msg to your page
-webView.send("you name it","your data");
+
+                webView.send("kissyou","come on");
 
 more detail can see mainactivity and /assets/demo.html
