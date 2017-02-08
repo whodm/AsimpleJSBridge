@@ -18,7 +18,7 @@ webView.loadUrl("your site");
 
 register your Bridge
 
-        webView.registerHandler("you name it", new BridgeCallback() {
+        webView.registerHandler("aha", new BridgeCallback() {
             @Override
             public void callBack(String data) {
                 tv.setText(data);
